@@ -1,0 +1,37 @@
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/examples/vendor/aframe/build/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<a-scene embedded arjs="trackingMethod: best;">
+  <!--  <a-assets>
+    <a-asset-item id="mask_d" src="https://jiharu.github.io/PDcollaboration/data/mask02.dae"></a-asset-item>
+  </a-assets>-->
+  <a-anchor>
+    <a-cylinder
+      position="0 0.75 0"
+      radius="0.1"
+      height="0.5"
+      color="#FFC65D"
+      src="https://jiharu.github.io/PDcollaboration/data/this.jpg"
+    ></a-cylinder>
+    <!--<a-box position="1 0.75 0" radius="0.2" height=".3" color="#FFC65D" src="https://jiharu.github.io/PDcollaboration/data/this.jpg"></a-box>-->
+    <a-gltf-model
+      src="https://jiharu.github.io/PDcollaboration/data/mask_glass.gltf"
+      scale="1 1 1"
+      rotation="-90 0 0"
+      position="0 -0.25 0"
+    ></a-gltf-model>
+    <a-gltf-model
+      src="https://jiharu.github.io/PDcollaboration/data/mask02_1.gltf"
+      scale="1 1 1"
+      rotation="-90 0 0"
+      position="0 0.25 0"
+    ></a-gltf-model>
+    <a-gltf-model
+      src="https://jiharu.github.io/PDcollaboration/data/mask02_gltf1.gltf"
+      scale="1 1 1"
+      rotation="-90 0 0"
+      position="1 -0.25 1"
+    ></a-gltf-model>
+    <!--convert obj,mtl,texture(s) all together.-->
+  </a-anchor>
+  <a-camera-static />
+</a-scene>
